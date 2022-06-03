@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+   <head><meta content="text/html; charset=utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   <title>白龙曰的代码库</title>
+       <style type="text/css">
+        .top{
+    /* 设置宽度高度背景颜色 */
+    height: auto; /*高度改为自动高度*/
+    width:100%;
+    margin-left: 0;
+    background:rgb(181, 181, 181);
+    position: fixed; /*固定在顶部*/
+    top: 0;/*离顶部的距离为0*/
+    margin-bottom: 5px;
+    border-radius: 0px; /*禁用圆角*/
+}
+.top ul{
+    /* 清除ul标签的默认样式 */
+    width: auto;/*宽度也改为自动*/
+    list-style-type: none;
+    white-space:nowrap;
+    overflow: hidden;
+    margin-left: 5%;
+    /* margin-top: 0;          */
+    padding: 0;
+ 
+}
+.top li {
+    float:left; /* 使li内容横向浮动，即横向排列  */
+    margin-right:2%;  /* 两个li之间的距离*/
+    position: relative;
+    overflow: hidden;
+}
+ 
+.top li a{
+   /* 设置链接内容显示的格式*/
+    display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+    color:white;
+    text-align: center;
+    padding: 3px;
+    overflow: hidden;
+    text-decoration: none; /* 去除下划线 */
+     
+}
+.top li a:hover{
+    /* 鼠标选中时背景变为蓝色 */
+    background-color: #33F;
+}
+.top ul li ul{
+    /* 设置二级菜单 */
+    margin-left: -0.2px;
+    background:rgb(181, 181, 181);
+    position: relative;
+    display: none; /* 默认隐藏二级菜单的内容 */
+ 
+}
+.top ul li ul li{
+    /* 二级菜单li内容的显示 */
+     
+    float:none;
+    text-align: center;
+}
+.top ul li:hover ul{
+    /* 鼠标选中二级菜单内容时 */
+    display: block;
+}
+body{
+    background:#eff3f5;
+}
+div {
+	border-radius: 25px;
+	background:rgba(255, 255, 255, 0.75);
+}
+a {
+	border-radius: 10px;
+}
+.main{display: block;margin-left:28%;width:57%;padding-left:100px;padding-right:100px;}
+@media (max-width: 768px){.main{display: block !important;width:90%;margin-left:4%;padding-left:10px;padding-right:10px;}
+.side{display: block;}
+@media (max-width: 768px){.side{display: none;}
+
+       </style>
+        <body
+		style="background-image: url(resources/bg.jpg);
+		       background-repeat:no-repeat;
+               background-attachment:fixed;
+               background-size:100% 100%;">
+            <div style="text-align:center;float:left;background:rgba(127, 127, 127, 0.7);color:white;margin-left:4%;margin-top:0px;width:20%;padding-top:40px;padding-bottom:50px;padding-left:1%;padding-right:1%;position:fixed;border-radius:0px;height:auto;backdrop-filter: blur(7px) saturate(150%);" class="side"><h2>老白制作</h2><p>简单的网站，同时也是<ul style="text-align:left"><li>LittleSheet官网</li><li>一个软件资源站</li><li>编程学习平台</li><li>测试使用的网站</li><li>优良工具分享</li></ul></p><p>LitleSheet开发已完成，正式版已发布，可以直接运行</p><a style="background:#A1A6FF;color:white;padding:8px;" href="sheet/ls_compiled_x64.7z">立即下载</a><p>强大的WinXPE，不局限于装机！</p><a style="background:#FFD236;color:white;padding:8px;" href="winsetup/index.html">了解更多</a>
+            <p><a href="https://space.bilibili.com/381482899" style="color:white;">我的B站主页</a></p></div>
+            <div style="text-align:center;background:rgba(255, 255, 255, 0.6);margin-top:100px;padding-top:20px;padding-bottom:10%;float:center;border-radius:0px;backdrop-filter: blur(7px) saturate(150%);" class="main">
+            <h1>欢迎来到白龙曰的代码库</h1>
+           <div style="padding-left:10%;padding-right:10%;padding-top:50px;padding-bottom:50px;"><h3>简介</h3>
+           <p> 白龙曰的代码库收集了装机工具、各种编程实例和课程、实用的软件和天文学课程，不仅是学习资源站，也是软件资源站。它包括：Python基础教程、Python高级教程、Python GUI界面基础以及一些其他教程。本站提供dnSpy、Python、Resource hacker等代码开发工具。</p><a href="learnpython/index.html" style="background:#A1A6FF;color:white;padding:8px;">开始学习</a></div>
+           <div style="float:left;border-radius:0px;background:rgba(255, 255, 255, 0);padding-top:40px;"><img src="sheet/screen.jpg" width="334.5" height="372"></div>
+           <div style="padding-left:10%;padding-right:10%;padding-top:50px;padding-bottom:50px;margin-top:20px;"><h3>高效办公</h3><p>LittleSheet是一个简单的的电子表格软件，支持 LittleSheet XML 格式和逗号分隔值文件格式。当前具备的功能：字体和对齐；自动计算；复制单元格；部分格式转换。未来将实现排序、筛选、图表等功能。你可以在QQ联系作者以参加开发。LittleSheet支持中文和英文，底层代码是Python编程语言编写的（简洁），内核代码是Python演示项目中的spreadsheet.py。</p><a style="background:#A1A6FF;color:white;padding:8px;" href="sheet/ls_compiled_x64.7z">立即下载(x64构建)</a>
+           <a style="background:#FF9196;color:white;padding:8px;" href="sheet/ls_source.7z">获取源码</a><h6>LittleSheet的开发离不开您的体验！</h6></div>
+           <div style="padding-top:50px;padding-bottom:50px;padding-left:10%;padding-right:10%;margin-top:20px;"><h3>Python项目</h3><p>由Python重新打造Minecraft! 基于pyglet模块可以实现Minecraft Python Edition，体验效果类似远古版本的Minecraft。你可以下载源代码进行调试，需要Python3.8或更高版本的运行环境，并且已经安装pyglet和easygui。反馈请在QQ联系作者。</p><a style="background:#A1A6FF;color:white;padding:8px;" href="https://github.com/Ksko233/mcpy-update2">在Github查看</a>
+           <a style="background:#FF9196;color:white;padding:8px;" href="python/index.html">显示更多</a></div>
+           <div style="padding-left:10%;padding-right:10%;padding-top:50px;padding-bottom:50px;margin-top:20px;"><h3>体验Haku OS 2</h3>
+           <p> 白龙曰的代码库收集了老白制作的PPT-OS: Haku OS 2。全新的UI设计，交互式组件，3D视图等功能。内置应用程序有宇宙沙盘、LittleSheet、记事本、应用商店等。</p><a href="pptos/index.html" style="background:#FF9196;color:white;padding:8px;">了解更多</a></div>
+           <p style="padding-top:50px;">本站的建设未完成，请积极提出建议！</p><h6>你无需打赏，可以直接体验本站的服务</h6><h6>本站不提供原版操作系统，请前往<a href="http://next.itellyou.cn">msdn</a>下载</h6></div>
+            <div class="top">
+                   <center> 
+                    <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="winsetup/index.html">安装系统</a><ul><li><a href="winsetup/index.html">WinXPE</a></li>
+<li><a href="#">安装教程</a></li></ul></li>
+                    <li><a href="#">Python</a><ul>
+                    <li><a href="python/index.html">Python项目</a></li><li><a href="learnpython/index.html">学习Python</a></li></ul></li>
+                    <li><a href="#">工具</a></li>
+                    <li><a href="#">天文</a></li>
+                    <li><a href="pptos/index.html">PPT-OS</a></li>
+                    <li><a href="javascript:alert('老白制作 白龙曰的代码库')">关于</a></li>
+                    </ul>
+                    </center>      
+            </div>
+        </body>
+    </head>
+</html>
