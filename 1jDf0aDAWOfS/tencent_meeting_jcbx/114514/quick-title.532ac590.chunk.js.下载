@@ -1,0 +1,2 @@
+(this["webpackJsonptencent-meeting-live"]=this["webpackJsonptencent-meeting-live"]||[]).push([[2],{525:function(e,t,i){"use strict";i.r(t);var n=i(33),a=i(73),c=new n.a,o=location.pathname.split("/").pop()||"";c.fetch(n.b.POST,"/liveportal/v2/get_simple_live_basic_info",{meeting_id:o},void 0,void 0,"/wemeet-tapi").then((function(e){document.title=a.a.decode(e.data.live_subject)}))}},[[525,4,0]]]);
+//# sourceMappingURL=quick-title.532ac590.chunk.js.map
